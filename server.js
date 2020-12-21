@@ -11,6 +11,7 @@ app.use(cors())
 
 // Routes
 app.use('/api', require('./routes/areaRouter'))
+app.use('/api', require('./routes/memberRouter'))
 
 //connect to mongodb
 const URI = process.env.MONGODB_URL
